@@ -6,7 +6,7 @@ var App = React.createClass({
 	},
 	handleOnKeyUp: function(event) {
 		// if user presses Enter, process data
-		if(event.which === 13) {
+		// if(event.which === 13) {
 			var input = event.target.value;
 			var apiUrl = 'https://api.themoviedb.org/3/search/movie?api_key=15d2ea6d0dc1d476efbca3eba2b9bbfb&query=' + encodeURIComponent(input) + '&callback=?';
 
@@ -20,7 +20,7 @@ var App = React.createClass({
 					movies: movieItems
 				});
 			}.bind(this));
-		}
+		// }
 	},
 	render: function() {
 		return (
@@ -36,7 +36,7 @@ var App = React.createClass({
 			</div>
 			<div className="row">
 			<div className="col-md-6 col-md-offset-3 text-center">
-			<input type="text" className="customInputField" placeholder="Input movie title and press Enter" onKeyUp={this.handleOnKeyUp}></input> 
+			<input type="text" className="customInputField" placeholder="Enter movie title" onKeyUp={this.handleOnKeyUp}></input> 
 			</div>
 			</div>
 			</div>
