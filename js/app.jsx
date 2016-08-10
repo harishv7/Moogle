@@ -7,30 +7,13 @@ var App = React.createClass({
 	handleOnKeyUp: function(event) {
 		// if user presses Enter, process data
 		if(event.which === 13) {
-			console.log(event.target.value);
 			var input = event.target.value;
 			var apiUrl = 'https://api.themoviedb.org/3/search/movie?api_key=15d2ea6d0dc1d476efbca3eba2b9bbfb&query=' + encodeURIComponent(input) + '&callback=?';
 
 			this.serverRequest = $.getJSON(apiUrl, function (result) {
-				console.log(result);
 				var movieItems = [];
 				var movie;
 				result.results.forEach(function(obj) {
-					console.log(obj);
-						// movie.title = obj.title;
-						// movie.overview = obj.overview;
-						// movie.poster_path = obj.poster_path;
-						// movie.release_date = obj.release_date;
-						// movie.popularity = obj.popularity;
-						// movie.adult = obj.adult;
-						// movie.backdrop_path = obj.backdrop_path;
-						// movie.id = obj.id;
-						// movie.original_language = obj.original_language;
-						// movie.original_title = obj.original_title;
-						// movie.video = obj.video;
-						// movie.vote_average = obj.vote_average;
-						// movie.vote_count = obj.vote_count;
-
 					movieItems.push(obj);
 				});
 				this.setState({
@@ -107,7 +90,7 @@ var Movie = React.createClass({
 			</div>
 			</div>
 			<div className="col-md-6 text-center"> 
-			{hasPoster ? <img src={imageUrl} className="poster img-center vcenter" /> : <span> <img src='../images/placeholder.png' className="placeholder img-center vcenter" /> <h3>No Image Found </h3> </span>}
+			{hasPoster ? <img src={imageUrl} className="poster img-center vcenter" /> : <span> <img src='http://ingridwu.dmmdmcfatter.com/wp-content/uploads/2015/01/placeholder.png' className="placeholder img-center vcenter" /> <h3>No Image Found </h3> </span>}
 			</div>
 			</div>
 			</div>
