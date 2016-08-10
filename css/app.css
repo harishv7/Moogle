@@ -1,0 +1,74 @@
+@import 'https://fonts.googleapis.com/css?family=News+Cycle|Pacifico|Questrial';
+
+.section-main {
+	height: 100vh;
+	background-image: url('https://ununsplash.imgix.net/reserve/RONyPwknRQOO3ag4xf3R_Kinsey.jpg?w=1024&amp;q=50&amp;fm=jpg&amp;s=c8e85e7825f6c74ff13321833a9bc28d');
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.heading {
+	font-family: 'Pacifico', 'Open Sans', sans-serif;
+	color: cornflowerblue;
+}
+
+.subheading {
+	font-family: 'News Cycle', sans-serif;
+	color: navy;
+}
+
+.cover-image {
+	background-image: url('https://ununsplash.imgix.net/reserve/RONyPwknRQOO3ag4xf3R_Kinsey.jpg?w=1024&amp;q=50&amp;fm=jpg&amp;s=c8e85e7825f6c74ff13321833a9bc28d');
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.poster {
+	max-height: 400px;
+	border-radius: 10px;
+	width: auto;
+}
+
+.placeholder {
+	width: 50%;
+}
+
+.customInputField {
+	background-color: rgba(54, 25, 25, 0.8);
+	width: 500px;
+	height: 50px;
+	border: none;
+	font-size: 11pt;
+	color: #63717f;
+	padding-left: 45px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.image-center {
+	display: block;
+	margin: auto;
+}
+
+.sectionMovies {
+	background: rgb(54, 25, 25);
+}
+
+.title {
+	font-family: 'Questrial', serif;
+	font-size: 40px;
+	word-wrap: break-word;
+	text-transform: capitalize;
+}
+
+.description {
+	font-family: 'News Cycle', sans-serif;
+	font-size: 20px;
+}
