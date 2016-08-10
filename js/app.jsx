@@ -36,7 +36,7 @@ var App = React.createClass({
 			</div>
 			<div className="row">
 			<div className="col-md-6 col-md-offset-3 text-center">
-			<input type="text" className="customInputField" placeholder="Enter movie title" onKeyUp={this.handleOnKeyUp}></input> 
+			<input type="text" id="inputField" className="customInputField" placeholder="Enter movie title" onKeyUp={this.handleOnKeyUp}></input> 
 			</div>
 			</div>
 			</div>
