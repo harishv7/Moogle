@@ -28,7 +28,7 @@ var App = React.createClass({
 			<div className="container">
 			<div className="row">
 			<div className="col-md-12 text-center">
-			<h1 className="text-center heading">Welcome to Moogle!</h1>
+			<h1 className="text-center heading">Moovee Finder!</h1>
 			<h4 className="subheading">The Google for Movies</h4>
 			<br/>
 			<br/>
